@@ -11,9 +11,17 @@ export default function DashboardPage() {
   };
 
   return (
-    <div style={{ padding: 20 }}>
-      <h1>Admin Dashboard</h1>
-      <button onClick={logout}>Logout</button>
+    <div className="min-h-screen flex items-center justify-center px-4 bg-slate-50">
+      <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-3xl">
+        <div className="flex items-center justify-between mb-4">
+          <h1 className="text-xl font-semibold">Admin Dashboard</h1>
+          <button onClick={logout} className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded">Logout</button>
+        </div>
+
+        <div>
+          <p className="text-sm text-slate-600">Welcome to the admin dashboard. Use the navigation to manage your organization.</p>
+        </div>
+      </div>
     </div>
   );
 }
